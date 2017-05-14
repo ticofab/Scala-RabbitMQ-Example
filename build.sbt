@@ -13,16 +13,12 @@ resolvers ++= Seq(
 libraryDependencies ++= Seq(
   // akka actors
   "com.typesafe.akka" %% "akka-actor" % akkaVersion,
-  "com.typesafe.akka" %% "akka-testkit" % akkaVersion,
 
   // configuration file
   "com.typesafe" % "config" % "1.3.0",
 
   // including this otherwise problems might occur
   "org.slf4j" % "slf4j-simple" % "1.7.12",
-
-  // test framework
-  "org.scalatest" %% "scalatest" % "2.2.4" % "test",
 
   // RabbitMQ client
   // https://github.com/SpinGo/op-rabbit
